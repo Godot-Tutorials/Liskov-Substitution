@@ -1,0 +1,47 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Reference",
+"class": "BadEnemy",
+"language": "GDScript",
+"path": "res://Bad/BadEnemy.gd"
+}, {
+"base": "BadEnemy",
+"class": "BadShield",
+"language": "GDScript",
+"path": "res://Bad/BadShieldEnemy.gd"
+}, {
+"base": "Reference",
+"class": "GoodEnemy",
+"language": "GDScript",
+"path": "res://Good/GoodEnemy.gd"
+}, {
+"base": "GoodEnemy",
+"class": "GoodShield",
+"language": "GDScript",
+"path": "res://Good/GoodShieldEnemy.gd"
+} ]
+_global_script_class_icons={
+"BadEnemy": "",
+"BadShield": "",
+"GoodEnemy": "",
+"GoodShield": ""
+}
+
+[application]
+
+config/name="Liskov Substitution"
+run/main_scene="res://Node2D.tscn"
+config/icon="res://icon.png"
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
